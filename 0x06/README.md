@@ -1,0 +1,11 @@
+# 0x06
+## Resources
+- https://www.aluracursos.com/blog/como-trabajar-con-markdown
+- https://www.aluracursos.com/blog/como-escribir-un-readme-increible-en-tu-github
+- https://www.aluracursos.com/blog/exigendia-autenticacion-por-token
+- https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+- https://www.atlassian.com/es/git/tutorials/setting-up-a-repository/git-clone
+- https://devhints.io/git-log-format
+- https://devhints.io/git-log
+- https://www.aluracursos.com/blog/git-y-los-nuevos-comandos
+- https://www.aluracursos.com/blog/open-source-una-breve-introduccion
