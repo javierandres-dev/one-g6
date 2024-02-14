@@ -1,0 +1,49 @@
+@import url(reset.css);
+:root {
+  --black: #000;
+  --white: #fff;
+  --dark-blue-100: #609ed4;
+  --dark-blue-200: #356ea9;
+  --dark-blue-300: #0a3871;
+  --dark-blue-400: #072b61;
+  --dark-blue-500: #052051;
+  --light-blue-100: #f3f5fc;
+  --light-blue-200: #eff1fa;
+  --light-blue-300: #e9ecf8;
+  --light-blue-400: #aab2d5;
+  --light-blue-500: #757fb2;
+  --gray-100: #ced4da;
+  --gray-200: #adb5bd;
+  --gray-300: #868e96;
+  --gray-400: #495057;
+  --gray-500: #343a40;
+}
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.btn {
+  border-radius: 2rem;
+}
+.btn-dark-blue {
+  background-color: var(--dark-blue-300);
+  color: var(--light-blue-100);
+}
+.btn-dark-blue:hover {
+  background-color: var(--dark-blue-400);
+  color: var(--light-blue-100);
+}
+.btn-light-blue {
+  background-color: var(--light-blue-100);
+  color: var(--dark-blue-300);
+  border: 0.1rem solid var(--dark-blue-300);
+}
+.btn-light-blue:hover {
+  background-color: var(--light-blue-200);
+  color: var(--dark-blue-300);
+  border: 0.1rem solid var(--dark-blue-300);
+}
