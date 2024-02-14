@@ -9,3 +9,7 @@
 - https://devhints.io/git-log
 - https://www.aluracursos.com/blog/git-y-los-nuevos-comandos
 - https://www.aluracursos.com/blog/open-source-una-breve-introduccion
+- https://www.aluracursos.com/blog/iniciando-repositorio-con-git
+- https://www.aluracursos.com/blog/creando-repositorio-remoto-en-github
+- https://www.aluracursos.com/blog/clonando-un-repositorio-remoto
+- https://www.aluracursos.com/blog/como-evitar-errores-en-git
