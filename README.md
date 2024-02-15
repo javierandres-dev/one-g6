@@ -10,4 +10,4 @@
 * challenges
   - 0x00 Encriptador
 
-- [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/01-aprender_a_aprender.md)
+- [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
