@@ -26,24 +26,71 @@
 html {
   font-size: 62.5%;
 }
-.btn {
-  border-radius: 2rem;
+body {
+  background-color: var(--light-blue-300);
 }
-.btn-dark-blue {
+header {
+  border: 1px solid black;
+}
+main {
+  border: 1px solid black;
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+}
+footer {
+  border: 1px solid black;
+}
+section {
+  border: 1px solid black;
+}
+.input {
+}
+.input textarea {
+  resize: none;
+  background-color: transparent;
+  padding: 1rem;
+  width: 68rem;
+  height: 80vh;
+  border: none;
+  outline: none;
+}
+.input textarea::placeholder {
+  color: var(--dark-blue-500);
+}
+.output {
+  background-color: var(--white);
+  border-radius: 2rem;
+  width: 40rem;
+}
+.btn {
+  border-radius: 2.4rem;
+  padding: 1rem 0;
+  width: 30rem;
+}
+.btn-primary {
   background-color: var(--dark-blue-300);
   color: var(--light-blue-100);
 }
-.btn-dark-blue:hover {
+.btn-primary:hover {
   background-color: var(--dark-blue-400);
   color: var(--light-blue-100);
 }
-.btn-light-blue {
+.btn-secondary {
   background-color: var(--light-blue-100);
   color: var(--dark-blue-300);
   border: 0.1rem solid var(--dark-blue-300);
 }
-.btn-light-blue:hover {
+.btn-secondary:hover {
   background-color: var(--light-blue-200);
   color: var(--dark-blue-300);
   border: 0.1rem solid var(--dark-blue-300);
+}
+.btn-light {
+  background-color: var(--white);
+  color: var(--gray-500);
+  border: 0.1rem solid var(--gray-500);
+}
+.btn-light:hover {
+  opacity: 0.75;
 }
