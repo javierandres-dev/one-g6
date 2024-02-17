@@ -25,48 +25,93 @@
 }
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 body {
+  height: 100%;
   background-color: var(--light-blue-300);
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'slnt' 0;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 header {
-  border: 1px solid black;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 main {
-  border: 1px solid black;
+  width: 100%;
   display: flex;
-  max-width: 80%;
-  margin: auto;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 1rem;
 }
 footer {
-  border: 1px solid black;
+  margin-top: 2rem;
 }
-section {
-  border: 1px solid black;
+.fw-light {
+  font-weight: 200;
+}
+.fw-bold {
+  font-weight: 600;
+}
+.fs-s {
+  font-size: 1.2rem;
+}
+.fs-m {
+  font-size: 2.4rem;
+}
+.fs-l {
+  font-size: 3.2rem;
 }
 .input {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.input textarea {
+.input textarea,
+.output textarea {
   resize: none;
   background-color: transparent;
-  padding: 1rem;
-  width: 68rem;
-  height: 80vh;
   border: none;
   outline: none;
+  width: 100%;
+  min-height: 32rem;
 }
 .input textarea::placeholder {
   color: var(--dark-blue-500);
 }
 .output {
+  width: 100%;
   background-color: var(--white);
   border-radius: 2rem;
-  width: 40rem;
+  padding: 4rem;
+}
+.output-a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+.output-a img {
+  display: none;
+}
+.requirements {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+.output-b {
+  display: none;
 }
 .btn {
-  border-radius: 2.4rem;
+  width: 100%;
+  font-size: 1em;
+  border-radius: 1rem;
   padding: 1rem 0;
-  width: 30rem;
 }
 .btn-primary {
   background-color: var(--dark-blue-300);
@@ -93,4 +138,32 @@ section {
 }
 .btn-light:hover {
   opacity: 0.75;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .input textarea,
+  .output textarea {
+    min-height: 60rem;
+  }
+  .btn-group {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    max-width: 960px;
+    flex-direction: row;
+  }
+  .output-a img {
+    display: unset;
+  }
 }
