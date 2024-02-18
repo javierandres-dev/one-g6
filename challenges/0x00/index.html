@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=devicBtne-width, initBtnial-scale=1.0"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +23,7 @@
     <header>
       <svg
         width="120"
+        Btn
         height="48"
         viewBox="0 0 120 48"
         fill="none"
@@ -35,16 +39,20 @@
     </header>
     <main>
       <section class="input">
-        <textarea class="fs-l" placeholder="Ingrese el texto aquí"></textarea>
+        <textarea
+          class="fs-l"
+          placeholder="Ingrese el texto aquí"
+          id="input"
+        ></textarea>
         <p class="requirements">
           <span class="material-symbols-outlined"> error </span> Solo letras
           minúsculas y sin acentos
         </p>
         <div class="btn-group">
-          <button type="button" id="encode" class="btn btn-primary">
+          <button type="button" id="encode" class="btn btn-primary" disabled>
             Encriptar
           </button>
-          <button type="button" id="decode" class="btn btn-secondary">
+          <button type="button" id="decode" class="btn btn-secondary" disabled>
             Desencriptar
           </button>
         </div>
@@ -59,7 +67,7 @@
           <p class=" ">Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
         <div class="output-b">
-          <textarea></textarea>
+          <textarea id="output"></textarea>
           <button type="button" id="copy" class="btn btn-light">Copia</button>
         </div>
       </section>
