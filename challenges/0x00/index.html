@@ -66,21 +66,24 @@
           <p class="fs-m fw-bold">Ningún mensaje fue encontrado</p>
           <p class=" ">Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
-        <div class="output-b">
-          <textarea id="output"></textarea>
+        <div class="output-b d-none">
+          <textarea class="fs-m" id="output" readonly></textarea>
           <button type="button" id="copy" class="btn btn-light">Copia</button>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="fs-s fw-light">
       <p>
-        &copy; 2024
-        <a
-          href="https://javierandres.dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          >javi</a
-        >.
+        <span>&copy; 2024</span><span>&nbsp;&nbsp;&vert;&nbsp;&nbsp;</span
+        ><span>
+          Found a bug or have an idea?
+          <a
+            href="https://javierandres.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Contact me</a
+          >.
+        </span>
       </p>
     </footer>
     <script src="./js/script.js"></script>
