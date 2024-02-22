@@ -7,7 +7,4 @@
 - 0x05 Curso HTML5 y CSS3 parte 4: Avanzando en CSS
 - 0x06 Curso de Git y GitHub: repositorio, commit y versiones
 
-* challenges
-  - 0x00 Encriptador
-
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
