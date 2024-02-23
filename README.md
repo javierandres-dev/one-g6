@@ -8,3 +8,6 @@
 - 0x06 Curso de Git y GitHub: repositorio, commit y versiones
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
+- [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
+
+- [Badge 1](https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671210503Prancheta_3.png)
