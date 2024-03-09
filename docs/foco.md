@@ -1,5 +1,4 @@
 # Curso de Foco: Enfocarse trae más resultados para el día a día
-- []()
 
 * La ilusión de ser multitarea
   - Si no hay acción, las listas se convierten en recordatorios de tus mejores planes que no se pusieron en práctica.
