@@ -6,6 +6,7 @@
 - 0x04 Curso HTML5 y CSS3 parte 3: Trabajando con formularios y tablas
 - 0x05 Curso HTML5 y CSS3 parte 4: Avanzando en CSS
 - 0x06 Curso de Git y GitHub: repositorio, commit y versiones
+- 0x07 Curso de Desarrollo de carrera: demanda del mercado
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
