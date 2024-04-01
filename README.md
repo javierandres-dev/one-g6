@@ -6,11 +6,11 @@
 - 0x04 Curso HTML5 y CSS3 parte 3: Trabajando con formularios y tablas
 - 0x05 Curso HTML5 y CSS3 parte 4: Avanzando en CSS
 - 0x06 Curso de Git y GitHub: repositorio, commit y versiones
-- 0x07 Curso de Desarrollo de carrera: demanda del mercado
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
 - [Curso de Foco: Enfocarse trae más resultados para el día a día](./docs/foco.md)
 - [Curso de Hábitos: Ser productivo para cumplir sus metas personales](./docs/habitos.md)
+- [Curso de Desarrollo de carrera: demanda del mercado](./desarrollo_de_carrera.md)
 
 - [Badge 1](https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671210503Prancheta_3.png)
