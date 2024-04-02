@@ -54,3 +54,41 @@ Estos objetivos se miden a través de escalas de evaluación (1,2,3 o objetivo a
   - Es importante tener autoconocimiento para reconocer nuestros valores fundamentales.
   - Es importante tener empatía para intentar comprender la forma de actuar/pensar de la otra persona, ya que no sabemos qué hay detrás de su motivación.
   - Cuando tus valores no están alineados con tus motivaciones, la probabilidad de sentirte frustrado e insatisfecho es mayor, por lo que es importante reconocerlos.
+- https://psicologiaymente.com/organizaciones/teorias-motivacion-laboral
+
+* Valores
+  * Teorías de necesidades más habladas y utilizadas en el ámbito empresarial, algunas de ellas son:
+    - Pirámide de Maslow
+    - La teoría de los dos factores
+    - Teoría de las necesidades adquiridas
+    - Jerarquía de necesidades
+  - Desafíos organizativos
+  * Algunos factores comunes en el impacto sobre la motivación:
+    - clima organizativo, transparencia en los procesos, liderazgo, oportunidades internas, salarios, beneficios y reconocimiento.
+
+Identificar tus valores personales es un proceso introspectivo que te permite comprender lo que es más importante para ti en la vida. Aquí hay algunos pasos que puedes seguir para descubrir y definir tus valores personales:
+
+- Autoevaluación: Dedica tiempo a reflexionar sobre tus experiencias pasadas, tus logros, tus momentos de felicidad y satisfacción, así como tus desafíos. Pregúntate a ti mismo en qué momentos te has sentido más auténtico y realizado.
+- Haz una lista: Haz una lista de palabras que creas que describen tus valores. Estas palabras pueden ser conceptos como "familia", "creatividad", "integridad", "aventura", "aprendizaje", "colaboración", entre otros.
+- Priorización: Ordena tu lista de valores en orden de importancia. Piensa en cuáles valores son absolutamente fundamentales para ti y cuáles son menos prioritarios.
+- Análisis de elecciones: Reflexiona sobre las decisiones importantes que has tomado en el pasado y trata de identificar qué valores influenciaron esas decisiones. Pregúntate por qué elegiste una opción en particular en lugar de otra.
+- Modelos a seguir: Considera a personas que admiras o que te inspiran. Piensa en qué cualidades o valores de esas personas te atraen y por qué.
+- Imagina tu vida ideal: Visualiza cómo sería tu vida ideal en términos de trabajo, relaciones, actividades y logros. Identifica qué valores serían fundamentales para lograr esa vida ideal.
+- Cuestiona tus elecciones actuales: Evalúa las elecciones que estás haciendo en tu vida actual y cómo se alinean con tus valores. Si sientes un desajuste, puede ser un indicador de que necesitas ajustar ciertos aspectos para vivir en congruencia con tus valores.
+- Prueba y ajusta: A medida que identifiques tus valores, ponlos a prueba en situaciones de la vida real. Evalúa cómo te sientes cuando vives según esos valores y cómo te sientes cuando no lo haces. Realiza ajustes según lo que descubras.
+- Refinamiento continuo: La identificación de valores es un proceso en constante evolución. A medida que creces y cambias, tus valores también pueden cambiar. Revisa y ajusta tu lista de valores periódicamente.
+- Busca orientación: Si sientes dificultades para identificar tus valores, considera hablar con un consejero, terapeuta o coach personal. A veces, un profesional puede ayudarte a profundizar en tu autoconocimiento.
+
+Recuerda que tus valores personales son únicos para ti y pueden influir en tus decisiones, metas y satisfacción en la vida. Identificarlos te brindará una base sólida para vivir una vida más auténtica y significativa.
+
+* Demandas del mercado
+  * Inteligencia emocional
+    - Tener inteligencia emocional no es saber controlar las emociones, es importante que no evitemos ninguna de ellas. Necesitamos reconocer las reacciones de nuestro cuerpo según cada sentimiento/emoción que sentimos, comprender nuestros procesos emocionales y entender cómo actuamos.
+    - Para desarrollar la inteligencia emocional necesitamos conocernos mejor a nosotros mismos, el autoconocimiento estimula la seguridad, la conciencia y la confianza en uno mismo.
+  * Asertividad, persuasión y negociación
+    - Las personas que tienen un comportamiento asertivo se expresan de forma clara y objetiva, mostrando su punto de vista sin avergonzar a otras personas, a diferencia del comportamiento pasivo (deja de decir algo para no llegar a nadie ni causar malestar), y agresivo (expone su punto de vista generando malestar en otra persona).
+  * Relación interpersonal y colaboración
+    - Tener una buena relación interpersonal no es ser amable con todo el mundo, ser la persona más popular o estar siempre de acuerdo con lo que dicen los demás. Tener una buena relación es tener una comunicación asertiva entre 2 o más personas.
+    - Ten empatía, adopta una postura, considera el punto de vista de la otra persona (aunque no estés de acuerdo), lee su comportamiento.
+- https://www.aluracursos.com/curso-online-inteligencia-emocional-practicas-vida-cotidiana
+- https://www.aluracursos.com/blog/generalistas-vs-especialistas
