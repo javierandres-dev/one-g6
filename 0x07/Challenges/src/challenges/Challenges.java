@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class Challenges {
     public static void main(String[] args) {
-        //celsiusToFahrenheit();
-        //guessTheNumber();
+        celsiusToFahrenheit();
+        guessTheNumber();
         bank();
     }
     
-    // Programa que retorne el resultado de convertir grados Celsius a Fahrenheit.
+    // Programa que convierta grados Celsius a grados Fahrenheit.
     private static void celsiusToFahrenheit(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter degrees Celsius:");
