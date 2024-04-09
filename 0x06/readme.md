@@ -1,4 +1,4 @@
-# 0x06
+# 0x06 Curso de Git y GitHub: repositorio, commit y versiones
 ## Resources
 - https://www.aluracursos.com/blog/como-trabajar-con-markdown
 - https://www.aluracursos.com/blog/como-escribir-un-readme-increible-en-tu-github

@@ -1,4 +1,4 @@
-# 0x07
+# 0x07 Curso de Java: creando tu primera aplicación
 ## Resources
 - https://www.aluracursos.com/blog/java-una-guia-para-iniciar-tecnologia
 - https://www.aluracursos.com/blog/intellij-idea-para-principiantes

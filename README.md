@@ -7,6 +7,7 @@
 - 0x05 Curso HTML5 y CSS3 parte 4: Avanzando en CSS
 - 0x06 Curso de Git y GitHub: repositorio, commit y versiones
 - 0x07 Curso de Java: creando tu primera aplicación
+- 0x08 Curso de Java: aplicando la Orientación a Objetos
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
