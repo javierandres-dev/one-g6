@@ -1,11 +1,18 @@
 package screenmatch;
 
+import ext.domain.screenmatch.calculations.Recommendations;
+import ext.domain.screenmatch.calculations.TimeCalculator;
+import ext.domain.screenmatch.models.Episode;
 import ext.domain.screenmatch.models.Movie;
+import ext.domain.screenmatch.models.Serie;
 
 public class ScreenMatch {
 
     public static void main(String[] args) {
+        System.out.println("Started");
+        System.out.println("-------------------------------------------------");
         Movie movie1 = new Movie();
+        movie1.setType("Movie");
         movie1.setName("The Pianist");
         movie1.setDateRelease(2002);
         movie1.setDuration(150);
@@ -19,6 +26,7 @@ public class ScreenMatch {
         movie1.showDataSheet();
         System.out.println("*************************************************");
         Movie movie2 = new Movie();
+        movie2.setType("Movie");
         movie2.setName("Man on Fire");
         movie2.setDateRelease(2004);
         movie2.setDuration(146);
@@ -29,5 +37,55 @@ public class ScreenMatch {
         movie2.calculateAverage();
         movie2.showDataSheet();
         System.out.println("*************************************************");
+        Serie serie1 = new Serie();
+        serie1.setType("Serie");
+        serie1.setName("Breaking Bad");
+        serie1.setDateRelease(2008);
+        serie1.setSeasons(5);
+        serie1.setEpisodes(62);
+        serie1.setMinutesPerEpisode(51);
+        serie1.setEnable(true);
+        serie1.evaluate(4.5);
+        serie1.evaluate(4.45);
+        serie1.evaluate(4.4);
+        serie1.calculateAverage();
+        serie1.showDataSheet();
+        System.out.println("*************************************************");
+        Serie serie2 = new Serie();
+        serie2.setType("Serie");
+        serie2.setName("The Big Bang Theory");
+        serie2.setDateRelease(2007);
+        serie2.setSeasons(12);
+        serie2.setEpisodes(279);
+        serie2.setMinutesPerEpisode(20);
+        serie2.setEnable(true);
+        serie2.evaluate(4.5);
+        serie2.evaluate(4.45);
+        serie2.evaluate(4.4);
+        serie2.calculateAverage();
+        serie2.showDataSheet();
+        System.out.println("*************************************************");
+        TimeCalculator timeCalculator = new TimeCalculator();
+        timeCalculator.add(movie1);
+        timeCalculator.add(movie2);
+        timeCalculator.add(serie1);
+        timeCalculator.add(serie2);
+        System.out.println("Total time: " + timeCalculator.getTotalTime());
+        System.out.println("*************************************************");
+        Recommendations recommendations = new Recommendations();
+        System.out.print("Recommendations movie 1: ");
+        recommendations.filter(movie1);
+        System.out.print("Recommendations movie 2: ");
+        recommendations.filter(movie2);
+        System.out.println("*************************************************");
+        Episode episode1 = new Episode();
+        episode1.setNumber(1);
+        episode1.setName("Pilot");
+        episode1.setSerie(serie2);
+        episode1.setViews(500);
+        System.out.print("Recommendations episode 1: ");
+        recommendations.filter(episode1);
+        System.out.println("-------------------------------------------------");
+        System.out.println("Finished.");
     }
 }
