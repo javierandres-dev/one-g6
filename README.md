@@ -9,6 +9,7 @@
 - 0x07 Curso de Java: creando tu primera aplicación
 - 0x08 Curso de Java: aplicando la Orientación a Objetos
 - 0x09 Curso de Java: trabajar con listas y colecciones de datos
+- 0x0A Curso de Java: consumir API, escribir archivos y manejar errores
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
