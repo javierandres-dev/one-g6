@@ -18,4 +18,8 @@
 - [Curso de Hábitos: Ser productivo para cumplir sus metas personales](./docs/habitos.md)
 - [Curso de Desarrollo de carrera: demanda del mercado](./docs/desarrollo_de_carrera.md)
 
-- [Badge 1](https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671210503Prancheta_3.png)
+![Badge Encryptor](./badges/badge-encryptor.png)
+![Badge Conversor](./badges/badge-conversor.png)
+---
+## Software Developer
+:copyright: 2024  |  Found a bug or have an idea? [Contact me](https://github.com/javierandres-dev).
