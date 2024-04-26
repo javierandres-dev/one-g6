@@ -17,6 +17,7 @@
 - [Curso de Foco: Enfocarse trae más resultados para el día a día](./docs/foco.md)
 - [Curso de Hábitos: Ser productivo para cumplir sus metas personales](./docs/habitos.md)
 - [Curso de Desarrollo de carrera: demanda del mercado](./docs/desarrollo_de_carrera.md)
+- [Curso de Desarrollo personal: cómo llegar a la posición deseada](./docs/desarrollo_personal.md)
 
 ![Badge Encryptor](./badges/badge-encryptor.png)
 ![Badge Conversor](./badges/badge-conversor.png)
