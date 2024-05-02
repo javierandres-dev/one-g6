@@ -1,5 +1,7 @@
 package ext.domain.screenmatch;
 
+import ext.domain.screenmatch.main.Main;
+import ext.domain.screenmatch.main.StreamsSample;
 import ext.domain.screenmatch.model.EpisodeData;
 import ext.domain.screenmatch.model.SeasonData;
 import ext.domain.screenmatch.model.SerieData;
@@ -21,14 +23,16 @@ public class ScreenmatchApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		// System.out.println("Hello, World! from Spring");
+		/*
+		System.out.println("Hello, World! from Spring");
+
 		var consumptionApi = new ConsumptionAPI();
-		var json = consumptionApi.getData("https://www.omdbapi.com/?t=the+big+bang+theory&apikey=a0858938");
+		var json = consumptionApi.getData("https://www.omdbapi.com/?t=the+big+bang+theory&apikey=API_KEY");
 		System.out.println("json: " + json);
 		ConvertData convertData = new ConvertData();
 		var serieData = convertData.getData(json, SerieData.class);
 		System.out.println("serieData: " + serieData);
-		json = consumptionApi.getData("https://www.omdbapi.com/?t=the+big+bang+theory&Season=1&episode=1&apikey=a0858938");
+		json = consumptionApi.getData("https://www.omdbapi.com/?t=the+big+bang+theory&Season=1&episode=1&apikey=API_KEY");
 		System.out.println("json: " + json);
 		var episodeData = convertData.getData(json, EpisodeData.class);
 		System.out.println("episodeData: " + episodeData);
@@ -36,12 +40,19 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		List<SeasonData> seasons = new ArrayList<>();
 		System.out.println("seasons: " + seasons);
 		for (int i = 1; i <= serieData.seasons() ; i++) {
-			json = consumptionApi.getData("https://www.omdbapi.com/?t=the+big+bang+theory&Season=" + i + "&apikey=a0858938");
+			json = consumptionApi.getData("https://www.omdbapi.com/?t=the+big+bang+theory&Season=" + i + "&apikey=API_KEY");
 			var seasonData = convertData.getData(json, SeasonData.class);
 			System.out.println("seasonData: " + seasonData);
 			seasons.add(seasonData);
 		}
 		System.out.println("seasons: " + seasons);
 		seasons.forEach(System.out::println);
+		*/
+		Main main = new Main();
+		main.showMenu();
+		/*
+		StreamsSample streamsSample = new StreamsSample();
+		streamsSample.showSample();
+		*/
 	}
 }
