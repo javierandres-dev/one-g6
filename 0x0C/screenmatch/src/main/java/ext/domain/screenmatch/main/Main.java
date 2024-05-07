@@ -9,10 +9,7 @@ import ext.domain.screenmatch.service.ConvertData;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -24,6 +21,7 @@ public class Main {
     private ConvertData convertData = new ConvertData();
 
     public  void showMenu(){
+        // get data general
         System.out.print("Enter serie name to search: ");
         String serie = sc.nextLine();
         System.out.println("serie: " + serie);
@@ -31,6 +29,8 @@ public class Main {
         System.out.println("json: " + json);
         var serieData = convertData.getData(json, SerieData.class);
         System.out.println("serieData: " + serieData);
+
+        // get data by season
         List<SeasonData> seasons = new ArrayList<>();
         System.out.println("seasons: " + seasons);
         for (int i = 1; i <= serieData.seasons() ; i++) {
@@ -41,7 +41,8 @@ public class Main {
         }
         System.out.println("seasons: " + seasons);
         seasons.forEach(System.out::println);
-        // without lambda
+
+        // show title - without lambda
         /*
         for (int i = 0; i < serieData.seasons(); i++) {
             List<EpisodeData> episodes = seasons.get(i).episodes();
@@ -50,7 +51,8 @@ public class Main {
             }
         }
         */
-        // with lambda
+
+        // show title - with lambda
         seasons.forEach(season -> season.episodes().forEach(episode -> System.out.println("episode: " + episode.title())));
 
         List<EpisodeData> episodeData = seasons.stream()
@@ -58,23 +60,30 @@ public class Main {
                 //.toList();
                 .collect(Collectors.toList());
 
+        // get top five
         System.out.println("Top five episodes: ");
         episodeData.stream()
                 .filter(episode -> !episode.rating().equalsIgnoreCase("N/A"))
+                .peek(e -> System.out.println("First - filter: " + e))
                 .sorted(Comparator.comparing(EpisodeData::rating).reversed())
+                .peek(e -> System.out.println("Second - sorted: " + e))
+                .map(e -> e.title().toUpperCase())
+                .peek(e -> System.out.println("Third - map: " + e))
                 .limit(5)
+                .peek(e -> System.out.println("Fourth - limit: " + e))
                 .forEach(System.out::println);
 
+        // convert data to list
         List<Episode> episodes = seasons.stream()
                 .flatMap(season -> season.episodes().stream()
                         .map(item -> new Episode(item.episode(), item)))
                 .collect(Collectors.toList());
         episodes.forEach(System.out::println);
 
+        // search episode by year
         System.out.print("Enter a year to search: ");
         var date = sc.nextInt();
         sc.nextLine();
-
         LocalDate dateSearch = LocalDate.of(date, 1, 1);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         episodes.stream()
@@ -84,5 +93,33 @@ public class Main {
                         "\tSeason: " + episode.getSeason() +
                         "\tEpisode: " + episode.getTitle()
                 ));
+
+        // search episode by title piece
+        System.out.print("Enter title piece to search: ");
+        var titlePiece = sc.nextLine();
+        Optional<Episode> episodeFound = episodes.stream()
+                .filter(e -> e.getTitle().toUpperCase().contains(titlePiece.toUpperCase()))
+                .findFirst();
+        if (episodeFound.isPresent()){
+            System.out.println("Episode found: " + episodeFound.get());
+        } else {
+            System.out.println("Episode not found");
+        }
+
+        //
+        /*Map<Integer, Double> ratingsBySeason = episodes.stream()
+                .filter(e -> e.getRating() > 0.0)
+                .collect(Collectors.groupingBy(Episode::getSeason,
+                        Collectors.averagingDouble(Episode::getRating)));
+        System.out.println("Ratings by season: " + ratingsBySeason);*/
+
+        // statistics
+        DoubleSummaryStatistics statistics = episodes.stream()
+                .filter(e -> e.getRating() > 0.0)
+                .collect(Collectors.summarizingDouble(Episode::getRating));
+        System.out.println("statistics: " + statistics);
+        System.out.println("average: " + statistics.getAverage());
+        System.out.println("max: " + statistics.getMax());
+        System.out.println("min: " + statistics.getMin());
     }
 }
