@@ -12,6 +12,7 @@
 - 0x0A Curso de Java: consumir API, escribir archivos y manejar errores
 - 0x0B Curso de Practicando con Java: Challenge Conversor de Monedas
 - 0X0C Curso de Java: trabajando con lambdas, streams y Spring Framework
+- 0x0D Curso de Java: persistencia de datos y consultas con Spring Data JPA
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
