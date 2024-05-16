@@ -1,6 +1,6 @@
 package ext.domain.screenmatch.model;
 
-import com.fasterxml.jackson.annotation.JsonAlias;
+import ext.domain.screenmatch.service.RequestChatGPT;
 
 import java.util.OptionalDouble;
 
@@ -21,7 +21,7 @@ public class Serie {
         this.genre = Category.fromString(serieData.genre().split(",")[0].trim());
         this.actors = serieData.actors();
         this.synopsis = serieData.synopsis();
-        ;
+//        this.synopsis = RequestChatGPT.getTranslation(serieData.synopsis());
     }
 
     public String getTitle() {
