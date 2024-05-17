@@ -5,8 +5,10 @@ import ext.domain.screenmatch.main.StreamsSample;
 import ext.domain.screenmatch.model.EpisodeData;
 import ext.domain.screenmatch.model.SeasonData;
 import ext.domain.screenmatch.model.SerieData;
+import ext.domain.screenmatch.repository.SerieRepository;
 import ext.domain.screenmatch.service.ConsumptionAPI;
 import ext.domain.screenmatch.service.ConvertData;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,6 +19,8 @@ import java.util.List;
 @SpringBootApplication
 public class ScreenmatchApplication implements CommandLineRunner {
 
+	@Autowired
+	private SerieRepository serieRepository;
 	public static void main(String[] args) {
 		SpringApplication.run(ScreenmatchApplication.class, args);
 	}
@@ -48,11 +52,15 @@ public class ScreenmatchApplication implements CommandLineRunner {
 		System.out.println("seasons: " + seasons);
 		seasons.forEach(System.out::println);
 		*/
-		Main main = new Main();
-		main.showMenu();
+
+		/*Main main = new Main();
+		main.showMenu();*/
 		/*
+
 		StreamsSample streamsSample = new StreamsSample();
 		streamsSample.showSample();
 		*/
+		Main main = new Main(serieRepository);
+		main.showMenu();
 	}
 }

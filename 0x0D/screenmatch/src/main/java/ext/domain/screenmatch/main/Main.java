@@ -1,6 +1,7 @@
 package ext.domain.screenmatch.main;
 
 import ext.domain.screenmatch.model.*;
+import ext.domain.screenmatch.repository.SerieRepository;
 import ext.domain.screenmatch.service.ConsumptionAPI;
 import ext.domain.screenmatch.service.ConvertData;
 
@@ -17,6 +18,12 @@ public class Main {
     private final String API_KEY = "&apikey=a0858938";
     private ConvertData convertData = new ConvertData();
     private List<SerieData> seriesData = new ArrayList<>();
+
+    private SerieRepository serieRepository;
+
+    public Main(SerieRepository repository) {
+        this.serieRepository = repository;
+    }
 
     public void showMenu() {
         System.out.println("START************************************************************************************");
@@ -185,20 +192,25 @@ public class Main {
 
     private void searchSerie() {
         SerieData data = getSerieData();
-        seriesData.add(data);
         System.out.println("data: " + data);
+        //seriesData.add(data);
+        Serie serie = new Serie(data);
+        System.out.println("serie: " + serie);
+        serieRepository.save(serie);
     }
 
     private void viewSearchedSeries() {
         //seriesData.forEach(System.out::println);
-        List<Serie> series = new ArrayList<>();
+        /*List<Serie> series = new ArrayList<>();
         series = seriesData.stream()
                 .map(item -> new Serie(item))
-                .collect(Collectors.toList());
+                .collect(Collectors.toList());*/
+
+        List<Serie> series = serieRepository.findAll();
 
         series.stream()
-                .sorted(Comparator.comparing(Serie::getGenre))
-                .forEach(System.out::println);
+        .sorted(Comparator.comparing(Serie::getGenre))
+        .forEach(System.out::println);
 
     }
 }

@@ -1,17 +1,29 @@
 package ext.domain.screenmatch.model;
 
-import ext.domain.screenmatch.service.RequestChatGPT;
-
+import java.util.List;
 import java.util.OptionalDouble;
+import ext.domain.screenmatch.service.RequestChatGPT;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "series")
 public class Serie {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long Id;
+    @Column(unique = true)
     private String title;
     private Integer seasons;
     private Double rating;
     private String poster;
+    @Enumerated(EnumType.STRING)
     private Category genre;
     private String actors;
     private String synopsis;
+    @Transient
+    private List<Episode> episodes;
+
+    public  Serie(){}
 
     public Serie(SerieData serieData) {
         this.title = serieData.title();
@@ -22,6 +34,14 @@ public class Serie {
         this.actors = serieData.actors();
         this.synopsis = serieData.synopsis();
 //        this.synopsis = RequestChatGPT.getTranslation(serieData.synopsis());
+    }
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
     }
 
     public String getTitle() {
