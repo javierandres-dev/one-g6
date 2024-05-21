@@ -1,14 +1,25 @@
 package ext.domain.screenmatch.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
+@Entity
+@Table(name = "episodes")
 public class Episode {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long Id;
     private Integer season;
     private String title;
     private Integer episode;
     private Double rating;
     private LocalDate released;
+    @ManyToOne
+    private Serie serie;
+
+    public Episode(){}
 
     public Episode(Integer number, EpisodeData item) {
         this.season = number;
@@ -22,8 +33,16 @@ public class Episode {
         try {
             this.released = LocalDate.parse(item.released());
         }catch (DateTimeParseException e){
-            this.rating = null;
+            this.released = null;
         }
+    }
+
+    public Serie getSerie() {
+        return serie;
+    }
+
+    public void setSerie(Serie serie) {
+        this.serie = serie;
     }
 
     public Integer getSeason() {

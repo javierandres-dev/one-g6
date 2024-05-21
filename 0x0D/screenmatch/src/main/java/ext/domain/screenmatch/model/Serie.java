@@ -20,7 +20,7 @@ public class Serie {
     private Category genre;
     private String actors;
     private String synopsis;
-    @Transient
+    @OneToMany(mappedBy = "serie", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Episode> episodes;
 
     public  Serie(){}
@@ -34,6 +34,15 @@ public class Serie {
         this.actors = serieData.actors();
         this.synopsis = serieData.synopsis();
 //        this.synopsis = RequestChatGPT.getTranslation(serieData.synopsis());
+    }
+
+    public List<Episode> getEpisodes() {
+        return episodes;
+    }
+
+    public void setEpisodes(List<Episode> episodes) {
+        episodes.forEach(e -> e.setSerie(this));
+        this.episodes = episodes;
     }
 
     public Long getId() {
@@ -108,6 +117,7 @@ public class Serie {
                 ", rating=" + rating + '\'' +
                 ", poster='" + poster + '\'' +
                 ", actors='" + actors + '\'' +
-                ", synopsis='" + synopsis + '\'';
+                ", synopsis='" + synopsis + '\'' +
+                ", episodes='" + episodes + '\'';
     }
 }

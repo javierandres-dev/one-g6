@@ -5,6 +5,7 @@ import ext.domain.screenmatch.repository.SerieRepository;
 import ext.domain.screenmatch.service.ConsumptionAPI;
 import ext.domain.screenmatch.service.ConvertData;
 
+import javax.swing.text.html.Option;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -18,8 +19,8 @@ public class Main {
     private final String API_KEY = "&apikey=a0858938";
     private ConvertData convertData = new ConvertData();
     private List<SerieData> seriesData = new ArrayList<>();
-
     private SerieRepository serieRepository;
+    private List<Serie> series;
 
     public Main(SerieRepository repository) {
         this.serieRepository = repository;
@@ -177,8 +178,33 @@ public class Main {
     }
 
     private void searchEpisode() {
-        SerieData serieData = getSerieData();
-        List<SeasonData> seasons = new ArrayList<>();
+        //SerieData serieData = getSerieData();
+        viewSearchedSeries();
+        System.out.println("Enter serie name: ");
+        var serieName = sc.nextLine();
+        Optional<Serie> serie = series.stream()
+                .filter(s -> s.getTitle().toLowerCase().contains(serieName.toLowerCase()))
+                .findFirst();
+        if (serie.isPresent()){
+            var serieFound = serie.get();
+            List<SeasonData> seasons = new ArrayList<>();
+            System.out.println("seasons: " + seasons);
+            for (int i = 1; i <= serieFound.getSeasons(); i++) {
+                var json = consumptionApi.getData(URL_BASE + serieFound.getTitle().replace(" ", "+") + "&Season=" + i + API_KEY);
+                var seasonData = convertData.getData(json, SeasonData.class);
+                System.out.println("seasonData: " + seasonData);
+                seasons.add(seasonData);
+            }
+            System.out.println("seasons: " + seasons);
+            seasons.forEach(System.out::println);
+            List<Episode> episodes = seasons.stream()
+                    .flatMap(d -> d.episodes().stream()
+                            .map(e -> new Episode(d.season(), e)))
+                    .collect(Collectors.toList());
+            serieFound.setEpisodes(episodes);
+            serieRepository.save(serieFound);
+        }
+        /* List<SeasonData> seasons = new ArrayList<>();
         System.out.println("seasons: " + seasons);
         for (int i = 1; i <= serieData.seasons(); i++) {
             var json = consumptionApi.getData(URL_BASE + serieData.title().replace(" ", "+") + "&Season=" + i + API_KEY);
@@ -187,7 +213,7 @@ public class Main {
             seasons.add(seasonData);
         }
         System.out.println("seasons: " + seasons);
-        seasons.forEach(System.out::println);
+        seasons.forEach(System.out::println); */
     }
 
     private void searchSerie() {
@@ -206,8 +232,8 @@ public class Main {
                 .map(item -> new Serie(item))
                 .collect(Collectors.toList());*/
 
-        List<Serie> series = serieRepository.findAll();
-
+        //List<Serie> series = serieRepository.findAll();
+        series = serieRepository.findAll();
         series.stream()
         .sorted(Comparator.comparing(Serie::getGenre))
         .forEach(System.out::println);
