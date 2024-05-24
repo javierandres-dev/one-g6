@@ -133,11 +133,15 @@ public class Main {
         var option = -1;
         while (option != 0) {
             var menu = """
-                    1 - Search serie
-                    2 - Search episode
-                    3 - View searched series
-                                        
-                    0 - Exit
+                    \t** MENU **
+                    \t1 - Search serie
+                    \t2 - Search episode
+                    \t3 - View searched series
+                    \t4 - Search serie by title
+                    \t5 - Top 5 best series
+                    \t6 - Search serie by genre
+                    \t7 - Buscar serie por género
+                    \t0 - Exit
                     """;
             System.out.println(menu);
             System.out.print("Option: ");
@@ -155,6 +159,22 @@ public class Main {
                 case 3:
                     System.out.println("view searched series...");
                     viewSearchedSeries();
+                    break;
+                case 4:
+                    System.out.println("search serie by title ...");
+                    searchSerieByTitle();
+                    break;
+                case 5:
+                    System.out.println("top 5 best series ...");
+                    searchTop5Series();
+                    break;
+                case 6:
+                    System.out.println("search serie by genre ...");
+                    searchSerieByGenre();
+                    break;
+                case 7:
+                    System.out.println("buscar serie por género ...");
+                    searchSerieByGenreSpanish();
                     break;
                 case 0:
                     System.out.println("ending application...");
@@ -238,5 +258,39 @@ public class Main {
         .sorted(Comparator.comparing(Serie::getGenre))
         .forEach(System.out::println);
 
+    }
+
+    private void searchSerieByTitle(){
+        System.out.println("Enter serie title: ");
+        var serieTitle = sc.nextLine();
+        Optional<Serie> serieFound = serieRepository.findByTitleContainsIgnoreCase(serieTitle);
+        if (serieFound.isPresent()){
+            System.out.println("Serie found: " + serieFound.get());
+        } else {
+            System.out.println("Serie '" + serieTitle + "' not found");
+        }
+    }
+
+    private void searchTop5Series(){
+        List<Serie> topSeries = serieRepository.findTop5ByOrderByRatingDesc();
+        topSeries.forEach(s -> System.out.println("Title: "  + s.getTitle() +  " | Rating: " + s.getRating()));
+    }
+
+    private void searchSerieByGenre(){
+        System.out.println("Enter serie genre: ");
+        var serieGenre = sc.nextLine();
+        var category = Category.fromString(serieGenre);
+        List<Serie> seriesByGenre = serieRepository.findByGenre(category);
+        System.out.println("Series of genre: " + serieGenre);
+        seriesByGenre.forEach(System.out::println);
+    }
+
+    private void searchSerieByGenreSpanish(){
+        System.out.println("Ingrese el género: ");
+        var serieGenre = sc.nextLine();
+        var category = Category.fromSpanish(serieGenre);
+        List<Serie> seriesByGenre = serieRepository.findByGenre(category);
+        System.out.println("Series de género: " + serieGenre);
+        seriesByGenre.forEach(System.out::println);
     }
 }
