@@ -21,6 +21,7 @@ public class Main {
     private List<SerieData> seriesData = new ArrayList<>();
     private SerieRepository serieRepository;
     private List<Serie> series;
+    private Optional<Serie> serieFound;
 
     public Main(SerieRepository repository) {
         this.serieRepository = repository;
@@ -141,6 +142,9 @@ public class Main {
                     \t5 - Top 5 best series
                     \t6 - Search serie by genre
                     \t7 - Buscar serie por género
+                    \t8 - Filter series
+                    \t9 - Search episode by title
+                    \t10 - Top 5 episodes by serie\n
                     \t0 - Exit
                     """;
             System.out.println(menu);
@@ -175,6 +179,18 @@ public class Main {
                 case 7:
                     System.out.println("buscar serie por género ...");
                     searchSerieByGenreSpanish();
+                    break;
+                case 8:
+                    System.out.println("filter series ...");
+                    filterSeriesBySeasonAndRating();
+                    break;
+                case 9:
+                    System.out.println("search episode by title ...");
+                    searchEpisodesByTitle();
+                    break;
+                case 10:
+                    System.out.println("top 5 episodes by serie ...");
+                    searchTop5EpisodesBySerie();
                     break;
                 case 0:
                     System.out.println("ending application...");
@@ -263,7 +279,7 @@ public class Main {
     private void searchSerieByTitle(){
         System.out.println("Enter serie title: ");
         var serieTitle = sc.nextLine();
-        Optional<Serie> serieFound = serieRepository.findByTitleContainsIgnoreCase(serieTitle);
+        serieFound = serieRepository.findByTitleContainsIgnoreCase(serieTitle);
         if (serieFound.isPresent()){
             System.out.println("Serie found: " + serieFound.get());
         } else {
@@ -292,5 +308,42 @@ public class Main {
         List<Serie> seriesByGenre = serieRepository.findByGenre(category);
         System.out.println("Series de género: " + serieGenre);
         seriesByGenre.forEach(System.out::println);
+    }
+
+    private void filterSeriesBySeasonAndRating(){
+        System.out.println("Enter number of seasons: ");
+        var inSeasons = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter minimum rating: ");
+        var inRating = sc.nextDouble();
+        sc.nextLine();
+        //List<Serie> filtered = serieRepository.findBySeasonsLessThanEqualAndRatingGreaterThanEqual(inSeasons, inRating);
+        //List<Serie> filtered = serieRepository.seriesBySeasonAndRating();
+        List<Serie> filtered = serieRepository.seriesBySeasonAndRating(inSeasons, inRating);
+        System.out.println("*** Series filtered ***");
+        filtered.forEach(s ->
+                System.out.println(s.getTitle() + "  - rating: " + s.getRating()));
+    }
+
+    private void searchEpisodesByTitle(){
+        System.out.println("Enter episode name: ");
+        var episodename = sc.nextLine();
+        List<Episode> episodesFound = serieRepository.episodeByname(episodename);
+        episodesFound.forEach(e ->
+                System.out.printf("Serie: %s | Season: %s | Episode: %s | Rating: %s\n",
+                        e.getSerie().getTitle(), e.getSeason(), e.getEpisode(), e.getRating()));
+    }
+
+    private void searchTop5EpisodesBySerie(){
+        searchSerieByTitle();
+        if (serieFound.isPresent()) {
+            Serie serie = serieFound.get();
+            System.out.println("serie: " + serie);
+            List<Episode> topEpisodes = serieRepository.top5Episodes(serie);
+            System.out.println("topEpisodes: " + topEpisodes);
+            topEpisodes.forEach(e ->
+                    System.out.printf("Serie: %s | Season: %s | Episode: %s | Rating: %s\n",
+                            e.getSerie().getTitle(), e.getSeason(), e.getTitle(), e.getRating()));
+        }
     }
 }
