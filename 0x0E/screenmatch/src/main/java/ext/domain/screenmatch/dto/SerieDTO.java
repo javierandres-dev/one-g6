@@ -4,7 +4,7 @@ import ext.domain.screenmatch.model.Category;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 
-public record SerieDTO(
+public record SerieDTO( Long id,
         String title,
         Integer seasons,
         Double rating,
