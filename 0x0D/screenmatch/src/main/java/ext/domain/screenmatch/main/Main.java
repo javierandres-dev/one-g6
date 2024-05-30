@@ -16,7 +16,7 @@ public class Main {
     private Scanner sc = new Scanner(System.in);
     private ConsumptionAPI consumptionApi = new ConsumptionAPI();
     private final String URL_BASE = "https://www.omdbapi.com/?t=";
-    private final String API_KEY = "&apikey=a0858938";
+    private final String API_KEY = "&apikey=API-KEY";
     private ConvertData convertData = new ConvertData();
     private List<SerieData> seriesData = new ArrayList<>();
     private SerieRepository serieRepository;
