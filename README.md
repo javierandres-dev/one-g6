@@ -15,6 +15,7 @@
 - 0x0D Curso de Java: persistencia de datos y consultas con Spring Data JPA
 - 0x0E Curso de Java: creando tu primera API y conectándola al Front End
 - 0x0F Curso de Practicando Spring Boot: Challenge Literalura
+- 0x10 Curso de Spring Boot 3: desarrollar una API Rest en Java
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
@@ -22,6 +23,7 @@
 - [Curso de Hábitos: Ser productivo para cumplir sus metas personales](./docs/habitos.md)
 - [Curso de Desarrollo de carrera: demanda del mercado](./docs/desarrollo_de_carrera.md)
 - [Curso de Desarrollo personal: cómo llegar a la posición deseada](./docs/desarrollo_personal.md)
+- [Curso de Propósito profesional: ser el protagonista de tu carrera](./docs/proposito_profesional.md)
 
 ![Badge Encryptor](./badges/badge-encryptor.png)
 ![Badge Conversor](./badges/badge-conversor.png)
