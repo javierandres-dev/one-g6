@@ -7,3 +7,20 @@
 - https://www.aluracursos.com/blog/intellij-idea-para-principiantes
 - https://www.aluracursos.com/blog/aumentando-tu-productividad-con-el-eclipse
 - https://www.aluracursos.com/blog/desarrollando-aplicaciones-java-code
+- https://www.json.org/json-es.html
+- https://docs.oracle.com/en/java/javase/16/language/records.html
+
+```
+
+@Configuration
+public class CorsConfiguration implements WebMvcConfigurer {
+
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+            .allowedOrigins("http://localhost:3000")
+            .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "TRACE", "CONNECT");
+    }
+}
+
+```
