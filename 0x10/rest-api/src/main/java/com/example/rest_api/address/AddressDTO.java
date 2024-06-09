@@ -1,5 +1,9 @@
 package com.example.rest_api.address;
 
-public record AddressDTO(String country, String city, String streetName, String streetNumber, String placeNumber,
-                         String complement) {
+import jakarta.validation.constraints.NotBlank;
+
+public record AddressDTO(
+        @NotBlank String country,
+        @NotBlank String city,
+        @NotBlank String complement) {
 }
