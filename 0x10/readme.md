@@ -31,4 +31,11 @@ public class CorsConfiguration implements WebMvcConfigurer {
 
 delete from flyway_schema_history where success = 0;
 
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+spring.data.web.pageable.page-parameter=pagina
+spring.data.web.pageable.size-parameter=tamano
+spring.data.web.sort.sort-parameter=orden
+
 ```

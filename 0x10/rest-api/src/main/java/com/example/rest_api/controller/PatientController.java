@@ -6,10 +6,12 @@ import com.example.rest_api.patient.PatientRepository;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/patients")
@@ -23,4 +25,14 @@ public class PatientController {
         //System.out.println("patientDTO = " + patientDTO);
         patientRepository.save(new PatientEntity(patientDTO));
     }
+
+    @GetMapping
+    public List<PatientEntity> patients() {
+        return patientRepository.findAll();
+    }
+
+    /*@GetMapping
+    public Page<PatientsDTO> patients(@PageableDefault(page = 0, size = 10, sort = {"name"})Pageable pageable){
+        return patientRepository.findAll(pageable).map(PatientsDTO::new);
+    }*/
 }
