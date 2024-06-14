@@ -19,4 +19,11 @@ public class AddressEntity {
         this.city = address.city();
         this.complement = address.complement();
     }
+
+    public AddressEntity updateData(AddressDTO address) {
+        this.country = address.country();
+        this.city = address.city();
+        this.complement = address.complement();
+        return this;
+    }
 }

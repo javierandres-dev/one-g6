@@ -21,6 +21,7 @@ public class DoctorEntity {
     private String email;
     private String phone;
     private String identification;
+    private Boolean active;
     @Enumerated(EnumType.STRING)
     private Specialization specialization;
     @Embedded
@@ -31,7 +32,27 @@ public class DoctorEntity {
         this.email = doctorDTO.email();
         this.phone = doctorDTO.phone();
         this.identification = doctorDTO.identification();
+        this.active = true;
         this.specialization = doctorDTO.specialization();
         this.address = new AddressEntity(doctorDTO.address());
+    }
+
+    public void updateData(DoctorUpdateDTO doctorUpdateDTO) {
+        if (doctorUpdateDTO.name() != null) {
+            this.name = doctorUpdateDTO.name();
+        }
+        if (doctorUpdateDTO.phone() != null) {
+            this.phone = doctorUpdateDTO.phone();
+        }
+        if (doctorUpdateDTO.identification() != null) {
+            this.identification = doctorUpdateDTO.identification();
+        }
+        if (doctorUpdateDTO.address() != null) {
+            this.address = address.updateData(doctorUpdateDTO.address());
+        }
+    }
+
+    public void inactive() {
+        this.active = false;
     }
 }
