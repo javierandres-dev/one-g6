@@ -3,3 +3,4 @@
 - https://http.cat/
 - https://http.dog/
 - https://docs.spring.io/spring-boot/appendix/application-properties/index.html
+- https://docs.spring.io/spring-data/jpa/reference/
