@@ -18,6 +18,7 @@
 - 0x10 Curso de Spring Boot 3: desarrollar una API Rest en Java
 - 0x11 Curso de Spring Boot 3: aplique las mejores prácticas y proteja una API Rest
 - 0x12 Curso de Spring Boot 3: documentar, probar y preparar una API para su implementación
+- 0x13 Curso de Practicando Spring Framework: Challenge Foro Hub
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
