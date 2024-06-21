@@ -1,0 +1,20 @@
+# 0x13 Curso de Practicando Spring Framework: Challenge Foro Hub
+## Resources
+- https://www.linkedin.com/company/oracle/
+- https://www.linkedin.com/company/alura-latam/mycompany/
+- https://app.aluracursos.com/course/spring-boot-3-desarrollar-api-rest-java
+- https://app.aluracursos.com/course/spring-boot-3-aplique-practicas-proteja-api-rest
+- https://app.aluracursos.com/course/spring-boot-3-api-para-su-implementacion
+- https://trello.com/b/9DeAlIsq/foro-hub-challenge-back-end
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.html
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html
+- https://www.aluracursos.com/blog/que-es-json
+- https://www.aluracursos.com/blog/spring-conozca-framework-java
+- https://www.aluracursos.com/blog/empezando-con-spring-framework
+- https://www.aluracursos.com/blog/rest-concepto-y-fundamentos
+- https://www.youtube.com/watch?v=t-iqt1b2qqk&ab_channel=AluraLatam
+- https://www.youtube.com/watch?v=EoPvlE85XAQ&ab_channel=AluraLatam
+- https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez
+- https://www.youtube.com/watch?v=bhKkeOMysuw
+- https://www.aluracursos.com/blog/como-escribir-un-readme-increible-en-tu-github
