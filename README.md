@@ -31,6 +31,7 @@
 ![Badge Encryptor](./badges/badge-encryptor.png)
 ![Badge Conversor](./badges/badge-conversor.png)
 ![Badge Literalura](./badges/badge-literalura.png)
+![Badge Foro Hub](./badges/badge-foro_hub.png)
 ---
 ## Software Developer
 :copyright: 2024  |  Found a bug or have an idea? [Contact me](https://github.com/javierandres-dev).
