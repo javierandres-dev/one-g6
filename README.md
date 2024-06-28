@@ -27,6 +27,7 @@
 - [Curso de Desarrollo de carrera: demanda del mercado](./docs/desarrollo_de_carrera.md)
 - [Curso de Desarrollo personal: cómo llegar a la posición deseada](./docs/desarrollo_personal.md)
 - [Curso de Propósito profesional: ser el protagonista de tu carrera](./docs/proposito_profesional.md)
+- [Curso de Transición de carrera: una guía al campo de tecnología](./docs/transicion_de_carrera.md)
 
 ![Badge Encryptor](./badges/badge-encryptor.png)
 ![Badge Conversor](./badges/badge-conversor.png)
