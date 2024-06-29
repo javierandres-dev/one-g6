@@ -45,3 +45,4 @@
 - https://www.canva.com/
 - https://www.canva.com/design/play?type=TACQ-j4WGew&category=tACZCj0NkUE&locale=es-419&ui=eyJHIjp7IkUiOnRydWV9fQ&layoutQuery=curricul
 - https://cdn3.gnarususercontent.com.br/ESP-2030-transici%C3%B3n+de+carrera/curriculo+exemplo.webp
+- https://www.aluracursos.com/blog/quiero-trabajar-en-una-startup-que-necesito-hacer
