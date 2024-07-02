@@ -28,6 +28,8 @@
 - [Curso de Desarrollo personal: cómo llegar a la posición deseada](./docs/desarrollo_personal.md)
 - [Curso de Propósito profesional: ser el protagonista de tu carrera](./docs/proposito_profesional.md)
 - [Curso de Transición de carrera: una guía al campo de tecnología](./docs/transicion_de_carrera.md)
+- [Curso de Fundamentos de Agilidad: Primeros pasos para la transformación ágil](./docs/fundamentos_de_agilidad.md)
+- [Curso de Emprendimiento: De la idea al plan de negocios](./docs/emprendimiento.md)
 
 ![Badge Encryptor](./badges/badge-encryptor.png)
 ![Badge Conversor](./badges/badge-conversor.png)
