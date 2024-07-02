@@ -1,4 +1,7 @@
 # one-g6
+
+[Certificado de finalización](https://app.aluracursos.com/user/personalbox1/fullCertificate/89f171c037d10e93533fc2ab168326b6)
+
 - 0x00 Curso de Lógica de programación: sumérgete en la programación con JavaScript
 - 0x01 Curso de Lógica de programación: explorar funciones y listas
 - 0x02 Curso HTML5 y CSS3 parte 1: Mi primera página web
