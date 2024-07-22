@@ -22,6 +22,7 @@
 - 0x11 Curso de Spring Boot 3: aplique las mejores prácticas y proteja una API Rest
 - 0x12 Curso de Spring Boot 3: documentar, probar y preparar una API para su implementación
 - 0x13 Curso de Practicando Spring Framework: Challenge Foro Hub
+- 0x14 Curso de Introducción a SQL con MySQL: Manipule y consulte datos
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
@@ -40,4 +41,5 @@
 ![Badge Foro Hub](./badges/badge-foro_hub.png)
 ---
 ## Software Developer
-:copyright: 2024  |  Found a bug or have an idea? [Contact me](https://github.com/javierandres-dev).
+Built by [javi](https://github.com/javierandres-dev/) :copyright: 2024  
+Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javierandres-dev/).
