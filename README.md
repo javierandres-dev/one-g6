@@ -24,6 +24,7 @@
 - 0x13 Curso de Practicando Spring Framework: Challenge Foro Hub
 - 0x14 Curso de Introducción a SQL con MySQL: Manipule y consulte datos
 - 0x15 Curso de Consultas SQL: Avanzando en SQL con MySQL
+- 0x16 Curso de Comandos DML: Manipulación de datos con MySQL
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
