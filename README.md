@@ -42,6 +42,7 @@
 ![Badge Conversor](./badges/badge-conversor.png)
 ![Badge Literalura](./badges/badge-literalura.png)
 ![Badge Foro Hub](./badges/badge-foro_hub.png)
+---
 ## Software Developer
 Built by [javi](https://github.com/javierandres-dev/) :copyright: 2024  
 Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javierandres-dev/).
