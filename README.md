@@ -26,6 +26,7 @@
 - 0x15 Curso de Consultas SQL: Avanzando en SQL con MySQL
 - 0x16 Curso de Comandos DML: Manipulación de datos con MySQL
 - 0x17 Curso de Procedures SQL: Ejecutando código en MySQL
+- 0x18 Curso de SQL con MySQL: Proyecto final
 
 - [Curso de Aprender a aprender: tecnicas para tu autodesarrollo](./docs/aprender_a_aprender.md)
 - [Curso de LinkedIn: Como hacer que tu perfil trabaje por ti](./docs/linkedin.md)
